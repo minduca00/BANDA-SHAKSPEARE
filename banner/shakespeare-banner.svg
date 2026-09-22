@@ -1,0 +1,66 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.18" stop-color="#FFF7F9"/>
+      <stop offset="0.52" stop-color="#FDECF2"/>
+      <stop offset="1" stop-color="#F7E9EE"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="180" y1="100" x2="1400" y2="770" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6A8C"/>
+      <stop offset="0.32" stop-color="#F53263"/>
+      <stop offset="0.65" stop-color="#D70E49"/>
+      <stop offset="1" stop-color="#8A0E2F"/>
+    </linearGradient>
+    <linearGradient id="softWhite" x1="408" y1="178" x2="1180" y2="678" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="0.58" stop-color="#FFF4F7" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#F6E4EA" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(470 240) rotate(45) scale(430 380)">
+      <stop stop-color="#FFD4DE"/>
+      <stop offset="0.55" stop-color="#FF9BB2" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FF9BB2" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#870B2C" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="390" cy="200" r="310" fill="url(#glow)"/>
+  <circle cx="1230" cy="680" r="250" fill="#FFDDE9" fill-opacity="0.6"/>
+
+  <g opacity="0.9">
+    <path d="M1100 138C1128 98 1174 76 1224 80C1277 84 1323 110 1354 157C1388 209 1382 272 1338 320C1308 355 1260 380 1218 410C1177 380 1127 355 1098 320C1055 272 1048 209 1082 157C1090 145 1095 141 1100 138Z" fill="url(#redGrad)" filter="url(#shadow)"/>
+    <path d="M510 705C534 655 585 622 641 620C708 618 769 663 782 727C795 790 760 850 693 884C632 851 578 811 545 756C531 734 521 719 510 705Z" fill="url(#redGrad)" filter="url(#shadow)"/>
+  </g>
+
+  <g opacity="0.76">
+    <path d="M222 702C300 633 398 596 508 592H578C572 634 556 674 527 711C497 749 457 781 403 811C347 841 289 851 230 847C214 783 217 739 222 702Z" fill="#E3124D" fill-opacity="0.16"/>
+    <path d="M1043 570C1166 526 1267 516 1360 537C1316 585 1283 634 1266 690C1228 673 1192 654 1148 630C1118 612 1082 592 1043 570Z" fill="#E3124D" fill-opacity="0.14"/>
+  </g>
+
+  <g opacity="0.9">
+    <path d="M282 335C337 292 389 266 470 240H748C883 220 989 308 1030 416C1082 552 1026 658 898 705C760 753 597 742 470 686C366 640 290 561 253 470C234 424 242 379 282 335Z" fill="url(#softWhite)" filter="url(#shadow)"/>
+    <path d="M411 576C466 544 531 526 609 523C677 520 732 530 775 550C726 590 676 624 624 643C563 665 509 668 454 649C441 615 423 596 411 576Z" fill="#FFF9FB"/>
+  </g>
+
+  <g>
+    <path d="M193 418C222 410 251 407 282 408L470 408C495 408 521 413 546 426L614 461C646 477 682 487 719 487H894C957 487 1020 474 1078 448L1119 429C1146 416 1177 411 1208 412L1296 415C1330 416 1364 426 1392 446L1460 497L1478 533C1483 548 1480 565 1470 578L1424 649C1418 657 1409 664 1399 668L1297 704C1258 720 1217 710 1183 681L1107 618L1037 631L951 651L831 648L748 632L670 612L607 589L550 560L487 526L428 495C387 474 341 465 296 471L232 479C204 483 182 458 184 430L193 418Z" fill="#FFFFFF" fill-opacity="0.7"/>
+  </g>
+
+  <g>
+    <text x="800" y="452" text-anchor="middle" fill="#AE123F" font-size="94" font-weight="700" letter-spacing="22" font-family="Georgia, 'Times New Roman', serif">BANDA</text>
+    <text x="800" y="548" text-anchor="middle" fill="#B80F39" font-size="104" font-weight="700" letter-spacing="13" font-family="Georgia, 'Times New Roman', serif">SHAKSPEARE</text>
+    <text x="800" y="603" text-anchor="middle" fill="#7A0E2D" font-size="28" letter-spacing="8" font-family="Arial, sans-serif">O AMOR EM FORMA DE MÚSICA</text>
+  </g>
+
+  <g opacity="0.75">
+    <path d="M118 736C184 705 245 682 312 661" stroke="#D5144A" stroke-width="12" stroke-linecap="round"/>
+    <path d="M1252 214C1308 230 1362 260 1408 305" stroke="#D5144A" stroke-width="12" stroke-linecap="round"/>
+    <path d="M1130 123C1154 77 1192 46 1243 33" stroke="#D5144A" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="286" cy="214" r="7" fill="#D5144A"/>
+    <circle cx="1335" cy="680" r="8" fill="#D5144A"/>
+  </g>
+</svg>
