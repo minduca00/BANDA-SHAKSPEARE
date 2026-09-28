@@ -65,6 +65,35 @@ function setupInteractions() {
     if (header) header.classList.toggle("is-scrolled", window.scrollY > 24);
   }, { passive: true });
 
+  var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function updateParallax() {
+    if (reducedMotion) {
+      document.querySelectorAll("[data-parallax]").forEach(function (element) {
+        element.style.setProperty("--parallax-shift", "0px");
+        element.style.transform = "";
+      });
+      return;
+    }
+
+    document.querySelectorAll("[data-parallax]").forEach(function (element) {
+      if (!element.classList.contains("hero-banner")) {
+        element.style.setProperty("--parallax-shift", "0px");
+        element.style.transform = "";
+        return;
+      }
+
+      var rect = element.getBoundingClientRect();
+      var centeredDistance = (rect.top + rect.height / 2) - (window.innerHeight / 2);
+      var offset = centeredDistance * 0.18;
+      element.style.setProperty("--parallax-shift", offset.toFixed(2) + "px");
+      element.style.transform = "translate3d(0, " + offset.toFixed(2) + "px, 0) scale(1.08)";
+    });
+  }
+
+  window.addEventListener("scroll", updateParallax, { passive: true });
+  window.addEventListener("resize", updateParallax);
+  updateParallax();
+
   var revealObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {

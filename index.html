@@ -35,12 +35,12 @@
       <a href="#sobre">Sobre</a>
       <a href="#cantores">Cantores</a>
       <a href="#musicas">Músicas</a>
-      <a href="#contrate">Contratações</a>
+      <a href="#contato">Contratações</a>
       <a href="#contato">Contato</a>
     </nav>
 
     <div class="nav-cta">
-      <a href="#contrate" class="btn btn-primary">
+      <a href="#contato" class="btn btn-primary">
         <span>Contrate a Banda</span>
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
@@ -53,7 +53,7 @@
 <!-- ======================= HERO ======================= -->
 <section class="hero" id="topo">
   <div class="hero-photo" aria-hidden="true">
-    <img src="banner/shakespeare-banner.svg" alt="Banner da Banda Shakspeare" class="hero-banner">
+    <img src="banner/shakespeare-banner.png" alt="Banner da Banda Shakspeare" class="hero-banner" data-parallax>
   </div>
 
   <div class="hero-particles" aria-hidden="true"></div>
@@ -65,7 +65,7 @@
     <p class="hero-phrase">“O amor, a música e a emoção em um só lugar.”</p>
     <div class="hero-actions">
       <a href="#musicas" class="btn btn-primary">Ouça Nossas Músicas</a>
-      <a href="#contrate" class="btn btn-ghost">Contrate para Seu Evento</a>
+      <a href="#contato" class="btn btn-ghost">Contrate para Seu Evento</a>
     </div>
   </div>
 
@@ -78,7 +78,7 @@
 <!-- ======================= SOBRE A BANDA ======================= -->
 <section class="section section-velvet reveal" id="sobre">
   <div class="wrap sobre-grid">
-    <div class="sobre-portrait">
+    <div class="sobre-portrait" data-parallax>
       <div class="placeholder-copy">
         Foto dos integrantes<br>(substituir por imagem real)
       </div>
@@ -155,7 +155,9 @@
 <!-- ======================= PERFIL DE IRES ======================= -->
 <section class="section ires-section reveal" id="ires">
   <div class="wrap ires-profile">
-    <div class="ires-photo"><img src="cantores/cantora.png" alt="Ires Barreto da Silva" loading="lazy"></div>
+    <div class="ires-photo" data-parallax>
+      <img src="cantores/cantora.png" alt="Ires Barreto da Silva" loading="lazy">
+    </div>
     <div class="ires-content">
       <div class="ires-heading">
         <p class="section-tag">uma voz que persiste</p>
@@ -178,11 +180,13 @@
 <!-- ======================= PERFIL DE ITALO ======================= -->
 <section class="section italo-section reveal" id="italo">
   <div class="wrap italo-profile">
-    <div class="italo-photo"><img src="cantores/image.png" alt="Italo Thiago Ribeiro da Silva" loading="lazy"></div>
+    <div class="italo-photo" data-parallax>
+      <img src="cantores/image.png" alt="Italo Thiago Ribeiro da Silva" loading="lazy">
+    </div>
     <div class="italo-content">
       <div class="italo-heading">
         <p class="section-tag">fé, identidade e ambição</p>
-        <h2 class="section-title">Italo Thiago <em>Ribeiro da Silva</em></h2>
+        <h2 class="section-title"><span class="nome-branco">Italo Thiago</span> <em>Ribeiro da Silva</em></h2>
         <p class="italo-subtitle">Um novo astro do brega romântico</p>
       </div>
       <div class="italo-copy">
@@ -214,39 +218,6 @@
   </div>
 </section>
 
-<!-- ======================= CONTRATAÇÃO ======================= -->
-<section class="section section-velvet reveal" id="contrate">
-  <div class="wrap contrata-grid">
-    <div class="contrata-pitch">
-      <p class="kicker">para o seu evento</p>
-      <h2>Seu Evento Merece Essa Emoção.</h2>
-      <p>Leve a energia, o romantismo e a música da Banda Shakspeare para o seu evento.</p>
-
-      <ul class="contrata-list">
-        <li>
-          Repertório de brega romântico para casamentos, aniversários e festas
-        </li>
-        <li>
-          Shows adaptáveis a casas noturnas, eventos corporativos e festivais
-        </li>
-        <li>
-          Atendimento direto com a assessoria para orçamento e datas
-        </li>
-      </ul>
-
-      <div class="contrata-actions">
-        <!-- TODO: configurar a URL oficial do WhatsApp da assessoria quando o número for confirmado -->
-        <a href="https://wa.me/?text=" target="_blank" rel="noopener" class="btn btn-whatsapp">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.6A11.9 11.9 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.5zM12 21.8c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.7 9.7 0 0 1 2.2 12C2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8z"/></svg>
-          Falar no WhatsApp
-        </a>
-        <span style="color:var(--muted-2); font-size:.8rem; align-self:center;">Número da assessoria a ser configurado</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
 <!-- ======================= CONTATO ======================= -->
 <section class="section reveal" id="contato">
   <div class="wrap contato-wrap">
@@ -262,7 +233,7 @@
         <p>Para contratar a Banda Shakspeare ou falar sobre agenda, apresentações e oportunidades, o canal mais direto continua sendo o Instagram oficial e o YouTube da banda.</p>
       </div>
       <div class="contato-links">
-        <a href="#contrate">Solicitar orçamento</a>
+        <a href="#contato">Solicitar orçamento</a>
         <a href="https://www.instagram.com/bandashakspeareoficial/" target="_blank" rel="noopener">Instagram · @bandashakspeareoficial</a>
         <a href="https://www.youtube.com/@bandashakespeare" target="_blank" rel="noopener">YouTube oficial</a>
       </div>
@@ -318,7 +289,7 @@
         <a href="#topo">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#musicas">Músicas</a>
-        <a href="#contrate">Contratações</a>
+        <a href="#contato">Contratações</a>
       </div>
       <div class="footer-col">
         <h4>Redes</h4>
